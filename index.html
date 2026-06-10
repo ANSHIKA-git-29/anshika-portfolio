@@ -3,268 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anshika Bhadauriya Portfolio</title>
+<title>Anshika Bhadauriya | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e293b);
-}
-
-.hero h1{
-font-size:4rem;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.typing{
-font-size:1.5rem;
-margin-top:10px;
-color:#94a3b8;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-section{
-padding:70px 10%;
-}
-
-.section-title{
-font-size:2rem;
-margin-bottom:25px;
-color:#38bdf8;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-}
-
-.card:hover{
-transform:translateY(-5px);
-transition:0.3s;
-}
-
-ul{
-padding-left:20px;
-}
-
-.contact a{
-display:block;
-color:#38bdf8;
-text-decoration:none;
-margin:10px 0;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-}
-
-@media(max-width:768px){
-.hero h1{
-font-size:2.5rem;
-}
-}
-</style>
+<script defer src="script.js"></script>
 </head>
 
 <body>
 
 <header>
-<div class="hero">
-<h1>Hi, I'm <span>Anshika Bhadauriya</span></h1>
+<nav>
 
-<div class="typing" id="typing"></div>
-
-<a class="btn" href="YOUR_RESUME_LINK_HERE" target="_blank">
-Download Resume
-</a>
+<div class="logo">
+Anshika<span>.</span>
 </div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
 </header>
 
-<section>
-<h2 class="section-title">About Me</h2>
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Anshika Bhadauriya</span></h1>
+
+<h2><span id="typing"></span></h2>
 
 <p>
-Computer Science Engineering student at PSIT Kanpur with strong foundations
-in Data Structures, Algorithms, Web Development, and Software Engineering.
-Passionate about building scalable applications and solving real-world problems.
+Computer Science Engineering student passionate about Full Stack Development,
+Artificial Intelligence, Cybersecurity and Problem Solving.
 </p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="YOUR_RESUME_LINK" target="_blank" class="btn-outline">
+Download Resume
+</a>
+
+</div>
+
+<div class="socials">
+
+<a href="https://github.com/ANSHIKA-git-29" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/anshika-bhadauriya-b536502a1" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-img">
+<img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png">
+</div>
+
 </section>
 
-<section>
-<h2 class="section-title">Skills</h2>
-
-<div class="cards">
+<section id="about">
+<h2>About Me</h2>
 
 <div class="card">
-<h3>Languages</h3>
-<p>Python, Java, C++, JavaScript</p>
+<p>
+I am a B.Tech Computer Science and Engineering student at PSIT Kanpur.
+I enjoy building scalable web applications and solving real-world problems through technology.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>Programming</h3>
+<ul>
+<li>Java</li>
+<li>C++</li>
+<li>Python</li>
+<li>JavaScript</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Frontend</h3>
-<p>HTML5, CSS3, Bootstrap, React.js</p>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Bootstrap</li>
+<li>React.js</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Backend</h3>
-<p>Node.js, Express.js, REST APIs</p>
+<ul>
+<li>Node.js</li>
+<li>Express.js</li>
+<li>REST APIs</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Database</h3>
-<p>MongoDB, MySQL</p>
+<ul>
+<li>MongoDB</li>
+<li>MySQL</li>
+</ul>
 </div>
 
 </div>
+
 </section>
 
-<section>
-<h2 class="section-title">Projects</h2>
+<section id="projects">
 
-<div class="cards">
+<h2>Projects</h2>
 
-<div class="card">
+<div class="project-card">
 <h3>Autonomous Cyber Defence System</h3>
-<p>
-AI-powered cybersecurity system for real-time threat detection
-and automated response.
-</p>
+<p>AI-powered cybersecurity platform for real-time threat detection and response.</p>
 </div>
 
-<div class="card">
-<h3>Tether</h3>
-<p>
-AI-based Missing Person Detection System using OpenCV and MongoDB.
-</p>
+<div class="project-card">
+<h3>Tether – AI Missing Person Detection</h3>
+<p>Face recognition system using OpenCV and MongoDB.</p>
 </div>
 
-<div class="card">
+<div class="project-card">
 <h3>Form Maker Website</h3>
-<p>
-Platform for creating and managing forms with validation and response collection.
-</p>
+<p>Web platform for creating and managing custom forms.</p>
 </div>
 
+</section>
+
+<section id="contact">
+
+<h2>Let's Connect</h2>
+
+<div class="card">
+<p>Email: anshikabhadauriya541@gmail.com</p>
+<p>Phone: +91 8349847160</p>
+<p>Location: Kanpur, India</p>
 </div>
-</section>
-
-<section>
-<h2 class="section-title">Achievements</h2>
-
-<ul>
-<li>Solved 250+ coding problems on LeetCode and HackerRank</li>
-<li>Winner – College Treasure Hunt Competition</li>
-<li>3rd Position – Photography Event</li>
-<li>3rd Prize – Cultural Diversity Skit Competition</li>
-</ul>
-</section>
-
-<section>
-<h2 class="section-title">Certifications</h2>
-
-<ul>
-<li>Dynamic Programming Camp Completion Certificate – AlgoUniversity</li>
-<li>Write Effective Resume and Cover Letter – TCS iON</li>
-<li>AI and Cybersecurity Awareness – TCS iON</li>
-<li>Infosys Springboard: HTML5, CSS3, Python Fundamentals, Python for Data Science</li>
-</ul>
-</section>
-
-<section class="contact">
-<h2 class="section-title">Contact</h2>
-
-<a href="mailto:anshikabhadauriya541@gmail.com">
-📧 anshikabhadauriya541@gmail.com
-</a>
-
-<a href="https://github.com/ANSHIKA-git-29" target="_blank">
-💻 GitHub
-</a>
-
-<a href="YOUR_LINKEDIN_URL" target="_blank">
-🔗 LinkedIn
-</a>
 
 </section>
 
 <footer>
-© 2026 Anshika Bhadauriya
+<p>© 2026 Anshika Bhadauriya</p>
 </footer>
-
-<script>
-const roles = [
-"Full Stack Developer Aspirant",
-"Problem Solver",
-"React & Node.js Learner",
-"CSE Student @ PSIT Kanpur"
-];
-
-let roleIndex = 0;
-let charIndex = 0;
-
-function typeEffect() {
-
-let currentRole = roles[roleIndex];
-
-document.getElementById("typing").innerHTML =
-currentRole.substring(0,charIndex);
-
-charIndex++;
-
-if(charIndex > currentRole.length){
-setTimeout(()=>{
-charIndex = 0;
-roleIndex = (roleIndex + 1) % roles.length;
-},1000);
-}
-
-setTimeout(typeEffect,120);
-}
-
-typeEffect();
-</script>
 
 </body>
 </html>
